@@ -5,7 +5,8 @@
   "main": "index.js",
   "contributors": [
     "Evan Su <evan@hexacyanide.com>",
-    "Jake Crawford <jake.crawford@outlook.com>"
+    "Jake Crawford <jake.crawford@outlook.com>",
+    "Lucas Laird"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

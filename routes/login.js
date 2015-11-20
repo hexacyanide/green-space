@@ -8,17 +8,13 @@ module.exports = function(db) {
         res.redirect('/');
         return;
       }
-      else {
-        res.render('pages/login', {
-          loggedIn: loggedIn
-        });
-      }
-    
+
+      res.render('pages/login', { loggedIn: loggedIn });
     },
     post: function(req, res) {
       var user = req.body.email;
       var pass = req.body.password;
-      
+
       db.authenticate(user, pass, function(pass, info) {
         if (pass) {
           req.session.auth = true;
@@ -26,13 +22,13 @@ module.exports = function(db) {
           res.redirect('/');
           return;
         }
-        
+
         req.flash('danger', 'Unrecognized username or password.');
         res.redirect('/login');
       });
     }
   };
-  
+
   var urlencoded = bodyParser.urlencoded({ extended: false });
   return { route: '/login', middleware: urlencoded, verbs: verbs };
 };
