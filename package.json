@@ -3,20 +3,24 @@
   "version": "1.0.0",
   "description": "Project for Local Hack Day at the University of Boulder Colorado",
   "main": "index.js",
+  "contributors": [
+    "Evan Su <evan@hexacyanide.com>",
+    "Jake Crawford <jake.crawford@outlook.com>"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install-db": "node scripts/setup-db"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakec1020/Green-Space"
+    "url": "https://github.com/hexacyanide/green-space"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jakec1020/Green-Space/issues"
+    "url": "https://github.com/hexacyanide/green-space/issues"
   },
-  "homepage": "https://github.com/jakec1020/Green-Space",
+  "homepage": "https://github.com/hexacyanide/green-space",
   "dependencies": {
     "async": "^1.4.2",
     "bcrypt-nodejs": "0.0.3",
